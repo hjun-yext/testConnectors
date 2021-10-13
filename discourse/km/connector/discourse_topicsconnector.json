@@ -43,11 +43,6 @@
       },
       {
         "type": "JSON",
-        "header": "Image Url",
-        "path": "image_url"
-      },
-      {
-        "type": "JSON",
         "header": "Date Created",
         "path": "created_at"
       },
@@ -90,11 +85,6 @@
     {
       "field": "discourse_replyCount",
       "header": "Number of Replies",
-      "subfieldPath": []
-    },
-    {
-      "field": "photoaGallery",
-      "header": "Image Url",
       "subfieldPath": []
     },
     {
