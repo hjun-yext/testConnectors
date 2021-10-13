@@ -71,7 +71,7 @@
       "field": "discourse_replyCount",
       "header": "Number of Replies",
       "subfieldPath": []
-    },
+    }
   ],
   "scheduleConfig": {
     "useSourceSchedule": false,
