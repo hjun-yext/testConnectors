@@ -163,7 +163,8 @@
       "findAndReplace": {
         "inputHeaders": {
           "headers": [
-            "First Post Avatar"
+            "First Post Avatar",
+            "Thread Avatar"
           ]
         },
         "valueToFind": {
