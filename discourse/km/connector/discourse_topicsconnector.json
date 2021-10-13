@@ -1,6 +1,6 @@
 {
   "$id": "discourse_connector",
-  "$schema": "https://schema.yext.com/config/km/connector/v1",
+  "$schema": "https://schema.yext.com/config/km/connector/v2",
   "displayName": "Discourse Topics Connector",
   "entityType": "Discourse_discourseTopic",
   "source": {
@@ -55,6 +55,11 @@
         "type": "JSON",
         "header": "Category ID",
         "path": "category_id"
+      },
+      {
+        "type": "JSON",
+        "header": "Image Url",
+        "path": "image_url"
       }
     ]
   },
@@ -125,6 +130,18 @@
       "field": "discourse_categoryID",
       "header": "Category ID",
       "subfieldPath": []
+    },
+    {
+      "field": "photoGallery",
+      "header": "Image Url",
+      "subfieldPath": [
+        {
+          "name": "image"
+        },
+        {
+          "name": "url"
+        }
+      ]
     }
   ],
   "scheduleConfig": {
