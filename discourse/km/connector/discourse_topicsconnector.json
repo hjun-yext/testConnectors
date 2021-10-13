@@ -60,6 +60,41 @@
         "type": "JSON",
         "header": "Image Url",
         "path": "image_url"
+      },
+      {
+        "type": "JSON",
+        "header": "First Post Username",
+        "path": "firstPost.value.name"
+      },
+      {
+        "type": "JSON",
+        "header": "First Post Text",
+        "path": "firstPost.value.cooked"
+      },
+      {
+        "type": "JSON",
+        "header": "First Post Author",
+        "path": "firstPost.value.name"
+      },
+      {
+        "type": "JSON",
+        "header": "First Post Number",
+        "path": "firstPost.value.post_number"
+      },
+      {
+        "type": "JSON",
+        "header": "First Post Topic ID",
+        "path": "firstPost.value.topic_id"
+      },
+      {
+        "type": "JSON",
+        "header": "First Post is Accepted Answer",
+        "path": "firstPost.value.accepted_answer"
+      },
+      {
+        "type": "JSON",
+        "header": "First Post Avatar",
+        "path": "firstPost.value.avatar_template"
       }
     ]
   },
@@ -88,48 +123,47 @@
         },
         "inputFormat": "yyyy-MM-dd"
       }
+    },
+    {
+      "findAndReplace": {
+        "inputHeaders": {
+          "headers": [
+            "First Post Avatar"
+          ]
+        },
+        "valueToFind": {
+          "plainText": {
+            "value": "{size}",
+            "ignoreCase": false
+          }
+        },
+        "replacement": "120"
+      }
     }
   ],
   "mappings": [
-    {
-      "field": "entityId",
-      "header": "Entity ID",
-      "subfieldPath": []
-    },
-    {
-      "field": "name",
-      "header": "Name",
-      "subfieldPath": []
-    },
-    {
-      "field": "slug",
-      "header": "Slug",
-      "subfieldPath": []
-    },
-    {
-      "field": "discourse_postCount",
-      "header": "Number of Posts",
-      "subfieldPath": []
-    },
-    {
-      "field": "discourse_replyCount",
-      "header": "Number of Replies",
-      "subfieldPath": []
-    },
-    {
-      "field": "discourse_dateCreatedAt",
-      "header": "Date Created",
-      "subfieldPath": []
-    },
     {
       "field": "discourse_lastPostedAt",
       "header": "Date of Last Post",
       "subfieldPath": []
     },
     {
-      "field": "discourse_categoryID",
-      "header": "Category ID",
-      "subfieldPath": []
+      "field": "discourse_firstDiscoursePost",
+      "header": "First Post is Accepted Answer",
+      "subfieldPath": [
+        {
+          "name": "acceptedAnswer"
+        }
+      ]
+    },
+    {
+      "field": "discourse_firstDiscoursePost",
+      "header": "First Post Text",
+      "subfieldPath": [
+        {
+          "name": "text"
+        }
+      ]
     },
     {
       "field": "photoGallery",
@@ -142,6 +176,89 @@
           "name": "url"
         }
       ]
+    },
+    {
+      "field": "slug",
+      "header": "Slug",
+      "subfieldPath": []
+    },
+    {
+      "field": "discourse_replyCount",
+      "header": "Number of Replies",
+      "subfieldPath": []
+    },
+    {
+      "field": "discourse_categoryID",
+      "header": "Category ID",
+      "subfieldPath": []
+    },
+    {
+      "field": "discourse_firstDiscoursePost",
+      "header": "First Post Username",
+      "subfieldPath": [
+        {
+          "name": "username"
+        }
+      ]
+    },
+    {
+      "field": "discourse_firstDiscoursePost",
+      "header": "First Post Topic ID",
+      "subfieldPath": [
+        {
+          "name": "topicID"
+        }
+      ]
+    },
+    {
+      "field": "name",
+      "header": "Name",
+      "subfieldPath": []
+    },
+    {
+      "field": "discourse_firstDiscoursePost",
+      "header": "First Post Avatar",
+      "subfieldPath": [
+        {
+          "name": "avatar"
+        },
+        {
+          "name": "url"
+        }
+      ]
+    },
+    {
+      "field": "entityId",
+      "header": "Entity ID",
+      "subfieldPath": []
+    },
+    {
+      "field": "discourse_postCount",
+      "header": "Number of Posts",
+      "subfieldPath": []
+    },
+    {
+      "field": "discourse_firstDiscoursePost",
+      "header": "First Post Number",
+      "subfieldPath": [
+        {
+          "name": "postNumber"
+        }
+      ]
+    },
+    {
+      "field": "discourse_firstDiscoursePost",
+      "header": "First Post Author",
+      "subfieldPath": [
+        {
+          "name": "author"
+        }
+      ]
+    },
+    {
+      "field": "discourse_dateCreatedAt",
+      "header": "Date Created",
+      "subfieldPath": []
     }
   ],
   "scheduleConfig": {
