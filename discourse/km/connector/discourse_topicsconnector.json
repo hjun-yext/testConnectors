@@ -59,7 +59,31 @@
     ]
   },
   "transforms": [
-    
+    {
+      "findAndReplace": {
+        "inputHeaders": {
+          "headers": [
+            "Date of Last Post",
+            "Date Created"
+          ]
+        },
+        "valueToFind": {
+          "regex": "T.*"
+        },
+        "replacement": ""
+      }
+    },
+    {
+      "formatDates": {
+        "inputHeaders": {
+          "headers": [
+            "Date of Last Post",
+            "Date Created"
+          ]
+        },
+        "inputFormat": "yyyy-MM-dd"
+      }
+    }
   ],
   "mappings": [
     {
