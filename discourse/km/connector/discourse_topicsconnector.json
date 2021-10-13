@@ -1,0 +1,91 @@
+{
+  "$id": "discourse_connector",
+  "$schema": "https://schema.yext.com/config/km/connector/v1",
+  "displayName": "Discourse Topics Connector",
+  "entityType": "Discourse_discourseTopic",
+  "source": {
+    "sourceConfig": {
+      "apiPushConfig": {
+        "app": "123672",
+        "dataFormat": "JSON"
+      }
+    },
+    "baseSelector": {
+      "type": "JSON",
+      "header": "Entity Container",
+      "path": "topics[]"
+    },
+    "selectors": [
+      {
+        "type": "JSON",
+        "header": "Entity ID",
+        "path": "id"
+      },
+      {
+        "type": "JSON",
+        "header": "Name",
+        "path": "title"
+      },
+      {
+        "type": "JSON",
+        "header": "Slug",
+        "path": "slug"
+      },
+      {
+        "type": "JSON",
+        "header": "Number of Posts",
+        "path": "postsCount"
+      },
+      {
+        "type": "JSON",
+        "header": "Number of Replies",
+        "path": "replyCount"
+      },
+      {
+        "type": "JSON",
+        "header": "Image Url",
+        "path": "imageUrl"
+      },
+      {
+        "type": "JSON",
+        "header": "Created Date",
+        "path": "createdAt"
+      },
+      {
+        "type": "JSON",
+        "header": "Latest Post Date",
+        "path": "lastPostedAt"
+      },
+      {
+        "type": "JSON",
+        "header": "Category ID",
+        "path": "categoryId"
+      },
+      {
+        "type": "JSON",
+        "header": "Thread",
+        "path": "thread"
+      },
+      {
+        "type": "JSON",
+        "header": "First Post",
+        "path": "firstPost"
+      },
+      {
+        "type": "JSON",
+        "header": "Accepted Answer",
+        "path": "acceptedAnswer"
+      }
+    ]
+  },
+  "transforms": [
+    
+  ],
+  "mappings": [
+    
+  ],
+  "scheduleConfig": {
+    "useSourceSchedule": false,
+    "runMode": "DEFAULT"
+  }
+}
