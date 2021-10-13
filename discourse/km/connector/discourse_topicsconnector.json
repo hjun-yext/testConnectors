@@ -34,12 +34,32 @@
       {
         "type": "JSON",
         "header": "Number of Posts",
-        "path": "postsCount"
+        "path": "posts_count"
       },
       {
         "type": "JSON",
         "header": "Number of Replies",
-        "path": "replyCount"
+        "path": "reply_count"
+      },
+      {
+        "type": "JSON",
+        "header": "Image Url",
+        "path": "image_url"
+      },
+      {
+        "type": "JSON",
+        "header": "Date Created",
+        "path": "created_at"
+      },
+      {
+        "type": "JSON",
+        "header": "Date of Last Post",
+        "path": "last_posted_at"
+      },
+      {
+        "type": "JSON",
+        "header": "Category ID",
+        "path": "category_id"
       }
     ]
   },
@@ -70,6 +90,26 @@
     {
       "field": "discourse_replyCount",
       "header": "Number of Replies",
+      "subfieldPath": []
+    },
+    {
+      "field": "photoaGallery",
+      "header": "Image Url",
+      "subfieldPath": []
+    },
+    {
+      "field": "discourse_dateCreatedAt",
+      "header": "Date Created",
+      "subfieldPath": []
+    },
+    {
+      "field": "discourse_lastPostedAt",
+      "header": "Date of Last Post",
+      "subfieldPath": []
+    },
+    {
+      "field": "discourse_categoryID",
+      "header": "Category ID",
       "subfieldPath": []
     }
   ],
