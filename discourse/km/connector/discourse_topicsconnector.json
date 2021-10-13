@@ -95,6 +95,41 @@
         "type": "JSON",
         "header": "First Post Avatar",
         "path": "firstPost.value.avatar_template"
+      },
+      {
+        "type": "JSON",
+        "header": "Thread Username",
+        "path": "thread[].username"
+      },
+      {
+        "type": "JSON",
+        "header": "Thread Text",
+        "path": "thread[].cooked"
+      },
+      {
+        "type": "JSON",
+        "header": "Thread Author",
+        "path": "thread[].name"
+      },
+      {
+        "type": "JSON",
+        "header": "Thread Number",
+        "path": "thread[].post_number"
+      },
+      {
+        "type": "JSON",
+        "header": "Thread Topic ID",
+        "path": "thread[].topic_id"
+      },
+      {
+        "type": "JSON",
+        "header": "Thread is Accepted Answer",
+        "path": "thread[].accepted_answer"
+      },
+      {
+        "type": "JSON",
+        "header": "Thread Avatar",
+        "path": "thread[].avatar_template"
       }
     ]
   },
@@ -228,6 +263,18 @@
       ]
     },
     {
+      "field": "discourse_discourseThread",
+      "header": "Thread Avatar",
+      "subfieldPath": [
+        {
+          "name": "avatar"
+        },
+        {
+          "name": "url"
+        }
+      ]
+    },
+    {
       "field": "entityId",
       "header": "Entity ID",
       "subfieldPath": []
@@ -247,6 +294,24 @@
       ]
     },
     {
+      "field": "discourse_discourseThread",
+      "header": "Thread Author",
+      "subfieldPath": [
+        {
+          "name": "author"
+        }
+      ]
+    },
+    {
+      "field": "discourse_discourseThread",
+      "header": "Thread Topic ID",
+      "subfieldPath": [
+        {
+          "name": "topicID"
+        }
+      ]
+    },
+    {
       "field": "discourse_firstDiscoursePost",
       "header": "First Post Author",
       "subfieldPath": [
@@ -256,9 +321,45 @@
       ]
     },
     {
+      "field": "discourse_discourseThread",
+      "header": "Thread is Accepted Answer",
+      "subfieldPath": [
+        {
+          "name": "acceptedAnswer"
+        }
+      ]
+    },
+    {
+      "field": "discourse_discourseThread",
+      "header": "Thread Number",
+      "subfieldPath": [
+        {
+          "name": "postNumber"
+        }
+      ]
+    },
+    {
       "field": "discourse_dateCreatedAt",
       "header": "Date Created",
       "subfieldPath": []
+    },
+    {
+      "field": "discourse_discourseThread",
+      "header": "Thread Username",
+      "subfieldPath": [
+        {
+          "name": "username"
+        }
+      ]
+    },
+    {
+      "field": "discourse_discourseThread",
+      "header": "Thread Text",
+      "subfieldPath": [
+        {
+          "name": "text"
+        }
+      ]
     }
   ],
   "scheduleConfig": {
