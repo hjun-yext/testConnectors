@@ -13,7 +13,7 @@
     "baseSelector": {
       "type": "JSON",
       "header": "Entity Container",
-      "path": "topics[]"
+      "path": "topics"
     },
     "selectors": [
       {
@@ -40,41 +40,6 @@
         "type": "JSON",
         "header": "Number of Replies",
         "path": "replyCount"
-      },
-      {
-        "type": "JSON",
-        "header": "Image Url",
-        "path": "imageUrl"
-      },
-      {
-        "type": "JSON",
-        "header": "Created Date",
-        "path": "createdAt"
-      },
-      {
-        "type": "JSON",
-        "header": "Latest Post Date",
-        "path": "lastPostedAt"
-      },
-      {
-        "type": "JSON",
-        "header": "Category ID",
-        "path": "categoryId"
-      },
-      {
-        "type": "JSON",
-        "header": "Thread",
-        "path": "thread"
-      },
-      {
-        "type": "JSON",
-        "header": "First Post",
-        "path": "firstPost"
-      },
-      {
-        "type": "JSON",
-        "header": "Accepted Answer",
-        "path": "acceptedAnswer"
       }
     ]
   },
@@ -82,7 +47,31 @@
     
   ],
   "mappings": [
-    
+    {
+      "field": "entityId",
+      "header": "Entity ID",
+      "subfieldPath": []
+    },
+    {
+      "field": "name",
+      "header": "Name",
+      "subfieldPath": []
+    },
+    {
+      "field": "slug",
+      "header": "Slug",
+      "subfieldPath": []
+    },
+    {
+      "field": "discourse_postCount",
+      "header": "Number of Posts",
+      "subfieldPath": []
+    },
+    {
+      "field": "discourse_replyCount",
+      "header": "Number of Replies",
+      "subfieldPath": []
+    },
   ],
   "scheduleConfig": {
     "useSourceSchedule": false,
