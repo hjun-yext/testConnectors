@@ -1,0 +1,51 @@
+{
+  "$id": "discourse_connector",
+  "$schema": "https://schema.yext.com/config/km/connector/v2",
+  "displayName": "Discourse Categories Connector",
+  "entityType": "Discourse_discourseCategory",
+  "source": {
+    "sourceConfig": {
+      "apiPushConfig": {
+        "app": "123672",
+        "dataFormat": "JSON"
+      }
+    },
+    "baseSelector": {
+      "type": "JSON",
+      "header": "Entity Container",
+      "path": "categories"
+    },
+    "selectors": [
+      {
+        "type": "JSON",
+        "header": "Entity ID",
+        "path": "id"
+      },
+      {
+        "type": "JSON",
+        "header": "Name",
+        "path": "name"
+      }
+    ]
+  },
+  "transforms": [
+    
+  ],
+  "mappings": [
+
+    {
+      "field": "name",
+      "header": "Name",
+      "subfieldPath": []
+    },
+    {
+      "field": "entityId",
+      "header": "Entity ID",
+      "subfieldPath": []
+    }
+  ],
+  "scheduleConfig": {
+    "useSourceSchedule": false,
+    "runMode": "DEFAULT"
+  }
+}
