@@ -25,6 +25,26 @@
         "type": "JSON",
         "header": "Name",
         "path": "name"
+      },
+      {
+        "type": "JSON",
+        "header": "Slug",
+        "path": "slug"
+      },
+      {
+        "type": "JSON",
+        "header": "Number of Posts",
+        "path": "posts_count"
+      },
+      {
+        "type": "JSON",
+        "header": "Number of Topics",
+        "path": "topic_count"
+      },
+      {
+        "type": "JSON",
+        "header": "Description",
+        "path": "description_text"
       }
     ]
   },
@@ -41,6 +61,26 @@
     {
       "field": "entityId",
       "header": "Entity ID",
+      "subfieldPath": []
+    },
+    {
+      "field": "slug",
+      "header": "Slug",
+      "subfieldPath": []
+    },
+    {
+      "field": "discourse_postCount",
+      "header": "Number of Posts",
+      "subfieldPath": []
+    },
+    {
+      "field": "discourse_topicCount",
+      "header": "Number of Topics",
+      "subfieldPath": []
+    },
+    {
+      "field": "description",
+      "header": "Description",
       "subfieldPath": []
     }
   ],
