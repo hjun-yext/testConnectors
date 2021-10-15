@@ -34,7 +34,7 @@
       {
         "type": "JSON",
         "header": "Number of Posts",
-        "path": "posts_count"
+        "path": "post_count"
       },
       {
         "type": "JSON",
@@ -45,6 +45,11 @@
         "type": "JSON",
         "header": "Description",
         "path": "description_text"
+      },
+      {
+        "type": "JSON",
+        "header": "Logo",
+        "path": "uploaded_logo.url"
       }
     ]
   },
@@ -82,6 +87,15 @@
       "field": "description",
       "header": "Description",
       "subfieldPath": []
+    },
+    {
+      "field": "discourse_avatar",
+      "header": "Logo",
+      "subfieldPath": [
+        {
+          "name": "url"
+        }
+      ]
     }
   ],
   "scheduleConfig": {
