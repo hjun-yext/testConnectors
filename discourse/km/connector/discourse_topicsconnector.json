@@ -130,6 +130,41 @@
         "type": "JSON",
         "header": "Thread Avatar",
         "path": "thread[].avatar_template"
+      },
+      {
+        "type": "JSON",
+        "header": "Accepted Answer Username",
+        "path": "acceptedAnswer.value.name"
+      },
+      {
+        "type": "JSON",
+        "header": "Accepted Answer Text",
+        "path": "acceptedAnswer.value.cooked"
+      },
+      {
+        "type": "JSON",
+        "header": "Accepted Answer Author",
+        "path": "acceptedAnswer.value.name"
+      },
+      {
+        "type": "JSON",
+        "header": "Accepted Answer Number",
+        "path": "acceptedAnswer.value.post_number"
+      },
+      {
+        "type": "JSON",
+        "header": "Accepted Answer Topic ID",
+        "path": "acceptedAnswer.value.topic_id"
+      },
+      {
+        "type": "JSON",
+        "header": "Accepted Answer is Accepted Answer",
+        "path": "acceptedAnswer.value.accepted_answer"
+      },
+      {
+        "type": "JSON",
+        "header": "Accepted Answer Avatar",
+        "path": "acceptedAnswer.value.avatar_template"
       }
     ]
   },
@@ -164,7 +199,8 @@
         "inputHeaders": {
           "headers": [
             "First Post Avatar",
-            "Thread Avatar"
+            "Thread Avatar",
+            "Accepted Answer Avatar"
           ]
         },
         "valueToFind": {
@@ -361,6 +397,58 @@
           "name": "text"
         }
       ]
+    },
+    {
+      "field": "discourse_answerAccepted",
+      "header": "Accepted Answer is Accepted Answer",
+      "subfieldPath": [{
+        "name": "acceptedAnswer"
+      }]
+    },
+    {
+      "field": "discourse_answerAccepted",
+      "header": "Accepted Answer Text",
+      "subfieldPath": [{
+        "name": "text"
+      }]
+    },
+    {
+      "field": "discourse_answerAccepted",
+      "header": "Accepted Answer Username",
+      "subfieldPath": [{
+        "name": "username"
+      }]
+    },
+    {
+      "field": "discourse_answerAccepted",
+      "header": "Accepted Answer Topic ID",
+      "subfieldPath": [{
+        "name": "topicID"
+      }]
+    }, {
+      "field": "discourse_answerAccepted",
+      "header": "Accepted Answer Avatar",
+      "subfieldPath": [{
+          "name": "avatar"
+        },
+        {
+          "name": "url"
+        }
+      ]
+    },
+    {
+      "field": "discourse_answerAccepted",
+      "header": "Accepted Answer Number",
+      "subfieldPath": [{
+        "name": "postNumber"
+      }]
+    },
+    {
+      "field": "discourse_answerAccepted",
+      "header": "Accepted Answer Author",
+      "subfieldPath": [{
+        "name": "author"
+      }]
     }
   ],
   "scheduleConfig": {
