@@ -250,7 +250,7 @@
       ]
     },
     {
-      "field": "slug",
+      "field": "discourse_slug",
       "header": "Slug",
       "subfieldPath": []
     },
@@ -452,7 +452,7 @@
     }
   ],
   "scheduleConfig": {
-    "useSourceSchedule": false,
+    "useSourceSchedule": true,
     "runMode": "DEFAULT"
   }
 }
