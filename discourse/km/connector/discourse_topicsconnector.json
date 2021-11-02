@@ -466,7 +466,7 @@
       "subfieldPath": []
     },
     {
-      "field": "views",
+      "field": "discourse_views",
       "header": "Views",
       "subfieldPath": []
     }
