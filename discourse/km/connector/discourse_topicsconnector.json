@@ -222,6 +222,19 @@
         },
         "replacement": "120"
       }
+    },
+    {
+      "function": {
+        "inputHeaders": {
+          "headers": [
+            "First Post Avatar",
+            "Thread Avatar",
+            "Accepted Answer Avatar"
+          ]
+        },
+        "plugin": "discourse_discourseUrlTransform",
+        "function": "fix_avatar_template"
+      }
     }
   ],
   "mappings": [
