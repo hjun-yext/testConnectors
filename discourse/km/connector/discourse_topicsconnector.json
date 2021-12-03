@@ -232,7 +232,7 @@
             "Accepted Answer Avatar"
           ]
         },
-        "plugin": "discourse_discourseUrlTransform",
+        "plugin": "discourse_urlTransform",
         "function": "fix_avatar_template"
       }
     }
